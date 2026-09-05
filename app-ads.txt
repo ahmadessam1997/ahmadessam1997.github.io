@@ -1,0 +1,15 @@
+# app-ads.txt — authorised digital sellers for Ahmad Essam's Android apps
+# Spec: https://iabtechlab.com/app-ads-txt/
+#
+# Must be served from the ROOT of the domain named as the developer website
+# in the Google Play listing: https://ahmadessam1997.github.io/app-ads.txt
+# A subpath is never crawled — AdMob only ever fetches the root.
+#
+# pub-7898882561225435 is the AdMob publisher ID shared by every app in this
+# account (the part of ca-app-pub-7898882561225435~... before the tilde).
+# f08c47fec0942fa0 is Google's TAG certification authority ID and is the same
+# for every AdMob publisher — it is not a secret and not account-specific.
+#
+# Only AdMob sells this inventory today. If a mediation network is ever added
+# in AdMob, that network needs its own line here or it cannot bid.
+google.com, pub-7898882561225435, DIRECT, f08c47fec0942fa0
