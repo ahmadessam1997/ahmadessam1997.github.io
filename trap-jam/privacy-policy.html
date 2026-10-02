@@ -23,116 +23,197 @@
 
 <h1>Trap Jam — Privacy Policy</h1>
 <p class="meta"><strong>App:</strong> Trap Jam (<code>com.ahmadessam.trapjam</code>)<br>
-<strong>Effective date:</strong> 24 September 2026<br>
+<strong>Effective date:</strong> 2 October 2026 (applies from version 1.4.0)<br>
 <strong>Contact:</strong> <a href="mailto:ahmadessam1997@gmail.com">ahmadessam1997@gmail.com</a></p>
 
 <h2>The short version</h2>
-<p>Trap Jam has no account and no login. Your stars, best times, coins, deaths
-and unlocked skins are stored <strong>on your device only</strong> and are never
-uploaded.</p>
-<p>The game does three things that involve other companies: it <strong>shows
-ads</strong> (Google AdMob), it <strong>sells optional one-time
-purchases</strong> (Google Play Billing, handled through RevenueCat), and —
-<strong>only if you choose to sign in</strong> — it posts your clear times to
-<strong>Google Play Games leaderboards</strong>.</p>
+<p>Trap Jam has no account and no login. Your stars, best times, coins, deaths,
+daily streak and unlocked skins are stored <strong>on your device only</strong>.</p>
+<p>The game does four things that involve other companies: it <strong>shows ads</strong>
+(Google AdMob), it <strong>sells optional one-time purchases</strong> (Google Play Billing,
+handled through RevenueCat), it <strong>measures how the game is played</strong> with
+anonymous gameplay events (Google Analytics for Firebase), and — <strong>only if you
+choose to sign in</strong> — it posts your clear times to <strong>Google Play Games
+leaderboards</strong>. It can also show a <strong>daily reminder notification</strong>, which is
+created on your device and involves no other company. Everything those
+services receive is described below, and it matches the Data safety answers on
+the Google Play listing exactly.</p>
 
 <h2>What is collected, and by whom</h2>
-<p>We operate no servers and hold no database of players. Everything below is
-collected by Google or RevenueCat under their own policies.</p>
-
 <table>
-  <tr><th>Data</th><th>Collected by</th><th>Why</th></tr>
-  <tr><td>Advertising ID, device and app info, approximate location from IP,
-      ad interactions</td><td>Google AdMob</td><td>To select, show, measure and
-      limit ads, and to detect invalid traffic</td></tr>
-  <tr><td>Purchase history (which product, when)</td><td>Google Play,
-      RevenueCat</td><td>To deliver purchases and let you restore them on a new
-      device</td></tr>
-  <tr><td>Play Games player ID and submitted clear times —
-      <strong>only while signed in</strong></td><td>Google Play Games</td>
-      <td>To rank you on the leaderboards</td></tr>
-  <tr><td>Stars, best times, coins, deaths, skins</td><td>Nobody — stays on your
-      device</td><td>To save your progress</td></tr>
+  <tr><th>Data</th><th>Who receives it</th><th>Why</th></tr>
+  <tr><td>Advertising ID, device model, OS version, coarse location inferred from IP address, and ad interaction events (an ad was shown, clicked, or a reward video was completed)</td><td>Google AdMob</td><td>To select, show, measure and frequency-cap ads, and to detect invalid traffic</td></tr>
+  <tr><td>Purchase history (which one-time products you bought), an anonymous random app-user ID generated on your device, country and basic device info</td><td>RevenueCat and Google Play Billing</td><td>To process the purchase, to know which unlocks you own, and to restore them if you reinstall or change device</td></tr>
+  <tr><td>Crash and performance diagnostics from the ads SDK</td><td>Google</td><td>To keep the ads SDK working</td></tr>
+  <tr><td>Gameplay events — a level was started, cleared or skipped (with its number, time, deaths, stars and coins), every tenth death on a level, the shop was opened, a purchase was started or completed, an ad was shown, a reward video was finished, which button was tapped on the rating prompt, a daily level was cleared, a "More games" tile was tapped — together with an app-instance ID, the advertising ID, device model, OS version, app version, country and language</td><td>Google Analytics for Firebase</td><td>To see which levels are too hard, whether the shop and the ad pacing work, and to measure ad revenue. Not used to identify you</td></tr>
+  <tr><td>Your Play Games player ID and the scores you submit — per-level clear times in milliseconds, levels completed, and total speedrun time — <strong>only while you are signed in to Play Games</strong></td><td>Google Play Games Services</td><td>To rank you on the public leaderboards</td></tr>
+  <tr><td>Your stars, best times, coin balance, death count, owned skins, trails and skip tokens, selected skin, daily-level streak, and whether you have been asked about notifications</td><td><strong>Nobody. Stays on your device.</strong></td><td>To let you keep playing where you left off</td></tr>
 </table>
+<p><strong>The game never asks for and never receives your name, email address, phone
+number, contacts, photos, precise location, microphone or camera. It has no text
+input at all.</strong> Payment card details are entered into Google Play, never into
+Trap Jam — we never see them.</p>
 
 <h2>Advertising, and the AD_ID permission</h2>
-<p>Trap Jam declares the <code>com.google.android.gms.permission.AD_ID</code>
-permission. The Google Mobile Ads SDK needs it on Android 13 and above to read
-the device advertising ID. That single permission is the reason this app can no
-longer claim "no data collected" on its Play data-safety form — and the reason
-this policy exists in its current form.</p>
-<p>Ads appear in four places and nowhere else:</p>
+<p>Trap Jam is free and is paid for by ads. The app declares the Android permission
+<code>com.google.android.gms.permission.AD_ID</code>, which the Google Mobile Ads SDK needs
+in order to read your device's advertising ID on Android 13 and later. That
+permission is the reason this policy — and the Play data-safety form — can no
+longer say "no data collected".</p>
+<p>Six ad formats appear, and only in these places:</p>
 <ul>
-  <li>a <strong>banner</strong> on the menu and the level-clear card — never
-      during play, because a strip along the bottom of the screen sits exactly
-      where you judge a jump from;</li>
-  <li>an <strong>interstitial</strong> in the gap between levels — never when
-      you die;</li>
-  <li>a <strong>rewarded video</strong>, which is entirely opt-in and pays coins;</li>
-  <li>a <strong>rewarded interstitial</strong> between levels, which also pays
-      coins.</li>
+  <li><strong>Banner</strong> — on the menu and the level-clear card only. It is hidden the
+      instant a level loads, so it never sits under your jumps.</li>
+  <li><strong>Native ad</strong> — a small ad card on the level-clear card. When it shows, the
+      banner does not.</li>
+  <li><strong>Interstitial</strong> — a full-screen ad in the seam <em>between</em> levels, after you
+      dismiss the clear card. Never while you are playing, and <strong>never when you
+      die</strong>.</li>
+  <li><strong>Rewarded interstitial</strong> — the same between-levels seam, occasionally, and it
+      pays coins.</li>
+  <li><strong>App open ad</strong> — when you come back to the game after at least 30 seconds
+      away, and only on the menu or the level-clear card. Never when the game is
+      first opened and never over a level in progress.</li>
+  <li><strong>Reward video</strong> — <strong>opt-in only</strong>. You can choose to watch one in the shop
+      for coins, on the level-clear card to double the coins of that clear, or from
+      the pause card to skip a level you are stuck on.</li>
 </ul>
+<p>Ad requests from this game are capped to the <strong>"General"</strong> content rating, and
+the game does not request child-directed or under-age-of-consent treatment.</p>
 
 <h2>Consent, and how to change it later</h2>
-<p>In the EEA, the UK and the US states that require it, Google's User Messaging
-Platform asks for your consent choices before any ad loads. You can change that
-choice at any time: open the <strong>Shop</strong> and tap
-<strong>Ad privacy choices</strong>.</p>
-<div class="box">
-  That button stays available <strong>even after you buy Remove Ads</strong>.
-  The consent record exists whether or not ads are being served to you, and you
-  are entitled to revise it either way.
-</div>
+<p>If you are in the EEA, the UK or another region where consent is required,
+Google's User Messaging Platform (UMP) shows you a consent form <strong>before</strong> the
+ads SDK is initialized, so no ad request is made under an unknown consent state.
+If consent is required and you have not granted it, ads are requested
+<strong>non-personalised</strong> rather than personalised.</p>
+<p>You can change that decision at any time: open the <strong>Shop</strong> in the game and tap
+<strong>"Ad privacy choices"</strong> in the footer. That button reopens Google's privacy
+options form and is shown whenever Google reports that a privacy-options entry
+point is required — including for players who have bought Remove Ads, because
+owning the purchase does not remove your right to revise a consent record.</p>
 
 <h2>Reward videos are optional</h2>
-<p>You never have to watch one. Every skin in the game can also be bought with
-coins earned simply by playing.</p>
+<p>A reward video is never forced on you. There are three offers, and each is a
+button you choose to tap: coins in the shop, "double coins" on the level-clear
+card, and "skip this level", which appears on the pause card only after many
+deaths on the same level. Declining costs you nothing but the reward. The coin
+skins, the trails and the skip tokens are bought with coins earned simply by
+playing, so you never have to watch an ad.</p>
+
+<h2>Analytics</h2>
+<p>Trap Jam uses <strong>Google Analytics for Firebase</strong> to record the anonymous gameplay
+events listed in the table above. They tell us things like "most players die 30
+times on level 13" or "nobody opens the shop", so levels and pacing can be
+fixed. An event never contains your name, an account, or anything you typed —
+the game has no text input. Google attaches its own app-instance ID, your
+device's advertising ID, device model, OS version, country and language.</p>
+<p>You can limit this: resetting or deleting your advertising ID (see <em>Your
+choices</em> below) unlinks future events from the old ID, and where consent is
+required your answer on the consent form governs how Google may use this data
+for advertising. Google keeps analytics events for a
+limited period (2 to 14 months depending on our Google Analytics setting) and then deletes them automatically.</p>
+
+<h2>Notifications</h2>
+<p>Trap Jam can show <strong>one reminder notification</strong> that a new daily level is
+ready, about a day after you last played. It is scheduled <strong>on your device</strong>;
+nothing is sent to a server and there is no push-messaging token.</p>
+<p>The game asks for permission to show notifications <strong>only after you finish a
+daily level for the first time</strong> — never when it is first opened. If you say
+no, nothing is scheduled and you are not asked again. You can turn the reminder
+off at any time in Android <em>Settings → Apps → Trap Jam → Notifications</em>.</p>
 
 <h2>Removing ads</h2>
-<p>The one-time <strong>Remove Ads</strong> purchase suppresses
-<strong>every</strong> ad format, including the opt-in rewarded videos, and
-stops the app requesting ads at all.</p>
+<p>The one-time <strong>Remove Ads</strong> purchase permanently stops <strong>every ad format</strong> —
+banner, native, interstitial, rewarded interstitial, app open <strong>and the opt-in
+reward video</strong>. The reward-video offers (coins, double coins, skip a level) are
+hidden rather than merely refused, the level skip is offered for coins instead,
+and the app stops asking the ads SDK to load anything at all. Anonymous
+analytics events are still recorded. The purchase is restored on any
+device signed in to the same Google Play account; a <strong>Restore Purchases</strong> button
+in the shop re-checks it.</p>
 
 <h2>Leaderboards are optional</h2>
-<p>Trap Jam has 26 Google Play Games leaderboards: one per level ranking clear
-times, plus Levels Completed and Total Speedrun Time. Sign-in is optional and
-the game is fully playable signed out — every leaderboard failure is silent by
-design. If you do not sign in, <strong>nothing is ever transmitted</strong> to
-Play Games.</p>
+<p>Trap Jam is fully playable signed out. Nothing is locked behind Play Games, and
+declining sign-in costs you no content, no stars and no skins.</p>
+<p>If you do sign in to Google Play Games, the game submits your per-level clear
+times, your number of levels completed, and — once every level has a recorded
+time — your total speedrun time, to Google's leaderboards. Those scores and your
+Play Games profile are then visible to other players in the rankings, exactly as
+Play Games leaderboards work everywhere. Nothing else is sent to Play Games:
+not your deaths, not your coins, not your purchases, not your skins. A level you
+skipped posts no time and does not count as completed there, and the daily level
+has no leaderboard.</p>
+<p>Your Play Games profile, its visibility and your leaderboard entries are managed
+by Google, in the <strong>Play Games</strong> app under <strong>Settings</strong>, not by us.</p>
 
 <h2>What stays on your device</h2>
-<p>Stars, per-level best times, the coin balance, the death counter, which skins
-you own and which is equipped. This is kept in the app's private storage and is
-removed when you uninstall or clear the app's data.</p>
+<p>Levels cleared or skipped, stars (up to 5 per level, 200 total), best time per
+level, your coin balance, your lifetime death count, which skins and trails you
+own and which you have equipped, your skip tokens, your daily-level streak, how
+many levels remain before the next rating prompt or between-levels ad, and
+whether you have been asked about notifications. These are records in the app's
+own storage. It is not
+transmitted anywhere, there is no cloud save, and uninstalling Trap Jam deletes
+it permanently.</p>
 
 <h2>Children</h2>
-<p>Trap Jam is not directed at children under 13 and is not enrolled in Google
-Play's Designed for Families programme. It serves standard advertising and is
-rated for a general teen-and-up audience.</p>
+<p>Trap Jam is rated for everyone, but because it uses the advertising ID it is
+<strong>not</strong> directed at children under 13 and is not part of Google Play's Designed
+for Families programme. If you are under 13, please ask a parent or guardian
+before playing. If you believe a child under 13 has used the app and you want
+any associated advertising identifier removed, contact us at the address above.</p>
 
 <h2>Your choices, and how to delete data</h2>
-<p>Full instructions, including resetting your advertising ID, deleting Play
-Games scores and requesting deletion of a purchase record, are on the
-<a href="delete-data.html">Delete your data</a> page.</p>
+<ul>
+  <li><strong>Reset your advertising ID or opt out of personalised ads:</strong> Android
+      <em>Settings → Google → All services → Ads</em>. You can delete the advertising ID
+      entirely there; ads will still appear, but will not be personalised.</li>
+  <li><strong>Change your ad consent:</strong> <em>Shop → Ad privacy choices</em>, as described above.</li>
+  <li><strong>Turn off the daily reminder:</strong> Android <em>Settings → Apps → Trap Jam →
+      Notifications</em>.</li>
+  <li><strong>Analytics data:</strong> it is keyed to the advertising ID and an app-instance ID.
+      Deleting the advertising ID and uninstalling the game (or clearing its data)
+      cuts the link; deletion requests are explained on
+      <a href="delete-data.html">our data deletion page</a>.</li>
+  <li><strong>Delete everything stored on the device:</strong> uninstalling Trap Jam erases your
+      stars, times, coins, deaths and unlocked skins permanently. There is no cloud
+      copy for us to keep.</li>
+  <li><strong>Leaderboard entries:</strong> remove them through the Google Play Games app, or by
+      deleting your Play Games profile for this game — Google holds those scores,
+      not us.</li>
+  <li><strong>Purchase records:</strong> these are held by Google Play and RevenueCat as proof of
+      purchase. Request deletion at <a href="delete-data.html">our data deletion page</a>, or
+      by emailing the address above. Note that deleting a purchase
+      record means the associated unlock can no longer be restored.</li>
+  <li><strong>Refunds</strong> are handled by Google Play under its own policy.</li>
+</ul>
+
+<h2>Data retention</h2>
+<p>We operate no servers and keep no database of our own. Retention is governed by
+the processors: Google's advertising data retention policy for ad data, Google
+Analytics for Firebase's retention setting for gameplay events (2 to 14 months depending on our Google Analytics setting),
+RevenueCat's for purchase records, and Google Play Games' for leaderboard
+scores. Uninstalling the app removes all on-device data immediately.</p>
 
 <h2>Third-party policies</h2>
 <ul>
-  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-  <li><a href="https://policies.google.com/technologies/ads">How Google uses advertising data</a></li>
-  <li><a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
+  <li><a href="https://policies.google.com/technologies/ads">Google AdMob / advertising</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses data from apps that use its services</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></li>
+  <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Play and Google Play Games</a></li>
 </ul>
 
 <h2>Security</h2>
-<p>All data in transit to Google and RevenueCat is encrypted (HTTPS/TLS). We
-hold no servers and no credentials of yours, because there is no account.</p>
+<p>All data leaving the app travels over encrypted HTTPS connections.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes materially, the effective date at the top changes with
-it and the updated version is published at this address before the change
-reaches a release.</p>
+<p>If this policy changes, the updated version is posted at this same address with
+a new effective date before the change ships in an update.</p>
 
 <h2>Contact</h2>
-<p><a href="mailto:ahmadessam1997@gmail.com">ahmadessam1997@gmail.com</a></p>
+<p>Questions or requests: <a href="mailto:ahmadessam1997@gmail.com">ahmadessam1997@gmail.com</a></p>
 
 <p style="margin-top:30px"><a href="delete-data.html">Delete your data →</a></p>
 

@@ -21,7 +21,7 @@
 
 <h1>Delete your Trap Jam data</h1>
 <p class="meta"><strong>App:</strong> Trap Jam (<code>com.ahmadessam.trapjam</code>)<br>
-<strong>Last updated:</strong> 24 September 2026</p>
+<strong>Last updated:</strong> 2 October 2026</p>
 
 <p>Trap Jam has <strong>no accounts</strong>, so there is no account to delete.
 Here is exactly what exists and how to remove each part.</p>
@@ -47,7 +47,26 @@ We do not store it.</p>
 game: open the <strong>Shop</strong> and use <strong>Ad privacy choices</strong>.
 That button stays available even after buying Remove Ads.</p>
 
-<h2>3. Leaderboard scores — only exist if you signed in</h2>
+<h2>3. Gameplay analytics — cut the link, or request deletion</h2>
+<p>From version 1.4.0 Trap Jam sends anonymous gameplay events (for example
+"level cleared" or "shop opened") to Google Analytics for Firebase. They are
+held by Google and are tied to an app-instance ID and the advertising ID —
+never to a name, an email address or an account, because the game has none.</p>
+<div class="box">
+  <strong>To cut the link yourself:</strong> delete the advertising ID (step 2)
+  and clear the app's data or uninstall it (step 1). That discards the
+  app-instance ID, so nothing collected afterwards is connected to the earlier
+  events. Events already collected are deleted automatically by Google after
+  the retention period (2 to 14 months depending on our Google Analytics setting).
+</div>
+<p>To ask for earlier deletion, email
+<a href="mailto:ahmadessam1997@gmail.com?subject=Trap%20Jam%20data%20deletion%20request">ahmadessam1997@gmail.com</a>
+with the subject <strong>"Trap Jam data deletion request"</strong>
+<strong>before</strong> you uninstall or clear the app's data. Because the
+events carry no name or email, we can only delete events that can be matched
+to your installation; we reply within 30 days saying what was deleted.</p>
+
+<h2>4. Leaderboard scores — only exist if you signed in</h2>
 <p>Trap Jam has 26 Google Play Games leaderboards: one per level, plus Levels
 Completed and Total Speedrun Time. <strong>If you never signed in to Play Games,
 nothing was ever posted</strong> and there is nothing to delete.</p>
@@ -60,7 +79,7 @@ your Play Games player ID, not by us.</p>
   We cannot delete a Play Games score on your behalf.
 </div>
 
-<h2>4. Purchase records — request deletion</h2>
+<h2>5. Purchase records — request deletion</h2>
 <p>If you bought Remove Ads or a skin, a record of that purchase is held by
 Google Play and by RevenueCat, tied to an anonymous random ID and to your
 Google Play account.</p>
@@ -93,6 +112,8 @@ confirmation email when it is done.</p>
   <li>Leaderboard scores: kept by Google Play Games until you delete them there.</li>
   <li>Purchase records: kept by Google Play and RevenueCat for as long as the
       purchase is restorable, or until you request deletion as above.</li>
+  <li>Gameplay analytics: kept by Google Analytics for Firebase for
+      2 to 14 months depending on our Google Analytics setting, then deleted automatically.</li>
   <li>Advertising data: retained under
       <a href="https://policies.google.com/technologies/ads">Google's advertising policy</a>.</li>
 </ul>
